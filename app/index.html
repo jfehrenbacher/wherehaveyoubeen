@@ -1,222 +1,262 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <title>wherehaveyoubeen</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <title>wherehaveyoubeen</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-    
-  </head>
-  <body>
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+
+</head>
+<body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+      <![endif]-->
 
-    <div class="container-fliud">
-      <div class="row">
-        <div id="sidebar" class="col-sm-3 sidebar" style="height:100%; position:fixed; min-height:100%;";>
-          <div id="sidebartext">
-          <h1>Where<br>Have<br>You<br>Been?</h1>
-          <p class="subtitle">Seattle, WA</p>
-          <h4 id="yourvenues">Your Venues</h4>
-          <ul id="venuelist">
-          </ul>
-          <i id="submit" class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+      <div class="container-fliud">
+        <div class="row">
+          <div id="sidebar" class="col-sm-3 sidebar" style="height:100%; position:fixed; min-height:100%;";>
+            <div id="sidebartext">
+              <h1>Where<br>Have<br>You<br>Been?</h1>
+              <p class="subtitle">Seattle, WA</p>
+              <h4 id="yourvenues">Your Venues</h4>
+              <ul id="venuelist">
+                <li class="neumos noshow">Neumos</li>
+                <li class= "chopsuey noshow">ChopSuey</li>
+                <li class= "highline oshow">HighLine</li>
+                <li class= "barboza noshow">Barboza</li>
+                <li class= "theblacklodge noshow">TheBlackLodge</li>
+                <li class= "theneptune noshow">TheNeptune</li>
+                <li class= "caferacer noshow">CafeRacer</li>
+                <li class= "thekrakenlounge noshow">TheKrakenLounge</li>
+                <li class= "fremontabbey noshow">FremontAbbey</li>
+                <li class= "thehighdive noshow">TheHighDive</li>
+                <li class= "nectar noshow">Nectar</li>
+                <li class= "substation noshow">Substation</li>
+                <li class= "thetractortavern noshow">TheTractorTavern</li>
+                <li class= "thesunset noshow">TheSunset</li>
+                <li class= "egansjamhouse noshow">Egan'sJamHouse</li>
+                <li class= "thejosephine noshow">TheJosephine</li>
+                <li class= "ballardhomestead noshow">BallardHomestead</li>
+                <li class= "thecrocodile noshow">TheCrocodile</li>
+                <li class= "elcorazon noshow">ElCorazon</li>
+                <li class= "theveraproject noshow">TheVeraProject</li>
+                <li class= "thetripledoor noshow">TheTripleDoor</li>
+                <li class= "showboxmarket noshow">ShowboxMarket</li>
+                <li class= "showboxsodo noshow">ShowboxSODO</li>
+                <li class= "paramounttheatre noshow">ParamountTheatre</li>
+                <li class= "themoore noshow">TheMoore</li>
+                <li class= "seamonsterlounge noshow">SeamonsterLounge</li>
+                <li class= "royalroom noshow">RoyalRoom</li>
+                <li class= "columbiacitytheater noshow">ColumbiaCityTheater</li>
+                <li class= "dimitriousjazzalley noshow">Dimitriou'sJazzAlley</li>
+                <li class= "studioseven noshow">StudioSeven</li>
+              </ul>
+              <a class="submitbutton" href="submit.html">
+                <i id="submit" class="fa fa-arrow-circle-right" aria-hidden="true">
+                  <div id="submitanimation">
+                  </div>
+                </i>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 main" style="height:1000px; position:relative;">
-          <div id="page" class="row">
-            <div name="Neumos" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Neumos</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="ChopSuey" id="chopsuey" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Chop Suey</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="HighLine" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">High Line</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="Barboza" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Barboza</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="TheBlackLodge" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">The Black Lodge</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="TheNeptune" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">The Neptune</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="CafeRacer" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Cafe Racer</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="TheKrakenLounge" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">The Kraken Lounge</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="FremontAbbey" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Fremont Abbey</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="TheHighDive" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">The High Dive</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="Nectar" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Nectar</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="Substation" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Substation</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="TheTractor" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">The Tractor Tavern</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="TheSunset" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">The Sunset</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="Egan'sJamHouse" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Egan's Jam House</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="TheJosephine" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">The Josephine</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="BallardHomestead" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Ballard Homestead</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="TheCrocodile" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">The Crocodile</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="ElCorazon" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">El Corazon</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="TheVeraProject" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">The Vera Project</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="TheTripleDoor" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">The Triple Door</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div name="ShowboxMarket" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Showbox Market</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-                        <div name="ShowboxSODO" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Showbox SODO</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-                        <div name= "ParamountTheatre" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Paramount Theatre</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-                        <div name="TheMoore"id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">The Moore</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-                        <div name="SeamonsterLounge" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Seamonster Lounge</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>
-                        <div name="RoyalRoom" id="neumos" class="minibox col-sm-4">
-              <p class="miniboxtext"><span class="box">Royal Room</span>
-                <br>
-                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
-              </p>
-            </div>            <div name="ColumbiaCityTheater" id="neumos" class="minibox col-sm-4">
+          <div class="col-sm-9 col-sm-offset-3 main" style="height:1000px; position:relative;">
+            <div id="page" class="row">
+              <div id="dialog" style="display:none;">
+                <p>Hey it worked</p>
+              </div>
+              <div data-target-toggle="neumos" name="Neumos" id="neumos" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Neumos</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true">
+                  </i>
+                </p>
+              </div>
+              <div data-target-toggle="chopsuey" name="ChopSuey" id="chopsuey" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Chop Suey</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="highline" name="HighLine" id="highline" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">High Line</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="barboza" name="Barboza" id="barboza" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Barboza</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="theblacklodge" name="TheBlackLodge" id="theblacklodge" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Black Lodge</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="theneptune" name="TheNeptune" id="theneptune" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Neptune</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="caferacer" name="CafeRacer" id="caferacer" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Cafe Racer</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="thekrakenlounge" name="TheKrakenLounge" id="thekrakenlounge" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Kraken Lounge</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="fremontabbey" name="FremontAbbey" id="fremontabbey" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Fremont Abbey</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="thehighdive" name="TheHighDive" id="thehighdive" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The High Dive</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="nectar" name="Nectar" id="nectar" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Nectar</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="substation" name="Substation" id="substation" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Substation</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="thetractortavern" name="TheTractor" id="thetractor" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Tractor Tavern</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="thesunset" name="TheSunset" id="thesunset" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Sunset</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="egansjamhouse" name="Egan'sJamHouse" id="egansjamhouse" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Egan's Jam House</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="thejosephine" name="TheJosephine" id="thejosephine" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Josephine</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="ballardhomestead" name="BallardHomestead" id="ballardhomestead" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Ballard Homestead</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="thecrocodile" name="TheCrocodile" id="thecrocodile" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Crocodile</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="elcorazon" name="ElCorazon" id="elcorazon" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">El Corazon</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="theveraproject" name="TheVeraProject" id="theveraproject" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Vera Project</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="thetripledoor" name="TheTripleDoor" id="thetripledoor" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Triple Door</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="showboxmarket" name="ShowboxMarket" id="showboxmarket" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Showbox Market</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="showboxsodo" name="ShowboxSODO" id="showboxsodo" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Showbox SODO</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="paramounttheatre" name= "ParamountTheatre" id="paramounttheatre" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Paramount Theatre</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="themoore" name="TheMoore"id="themoore" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Moore</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="seamonsterlounge" name="SeamonsterLounge" id="seamonsterlounge" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Seamonster Lounge</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="royalroom" name="RoyalRoom" id="royalroom" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Royal Room</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>            
+              <div data-target-toggle="columbiacitytheater" name="ColumbiaCityTheater" id="columbiacitytheater" class="minibox col-sm-4">
               <p class="miniboxtext"><span class="box">Columbia City Theater</span>
                 <br>
                 <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
               </p>
             </div>
-                        <div name="Dimitriou'sJazz Alley" id="neumos" class="minibox col-sm-4">
+            <div data-target-toggle="dimitriousjazzalley" name="Dimitriou'sJazzAlley" id="dimitrious" class="minibox col-sm-4">
               <p class="miniboxtext"><span class="box">Dimitriou's Jazz Alley</span>
                 <br>
                 <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
               </p>
             </div>
-                        <div name="StudioSeven" id="neumos" class="minibox col-sm-4">
+            <div data-target-toggle= "studioseven" name="StudioSeven" id="studioseven" class="minibox col-sm-4">
               <p class="miniboxtext"><span class="box">Studio Seven</span>
                 <br>
                 <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
@@ -228,6 +268,8 @@
     </div>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="jquery.modal.js" type="text/javascript" charset="utf-8"></script>
+
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
@@ -246,6 +288,7 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+
     <!-- endbuild -->
     
 
@@ -255,12 +298,12 @@
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
   </body>
-</html>
+  </html>
