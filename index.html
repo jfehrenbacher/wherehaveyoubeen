@@ -1,8 +1,313 @@
-<!DOCTYPE html> <html class=no-js> <head> <meta charset=utf-8> <title>wherehaveyoubeen</title> <meta name=description content=""> <meta name=viewport content="width=device-width,initial-scale=1"> <link rel="shortcut icon" href=/favicon.b25e58c4.ico> <link rel=apple-touch-icon href=/apple-touch-icon.9727d3c2.png> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel=stylesheet href=styles/main.34243527.css> <script src=scripts/vendor/modernizr.fbe20327.js></script>  <body> <!--[if lt IE 10]>
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>wherehaveyoubeen</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="/favicon.b25e58c4.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+  <link rel="stylesheet" href="styles/main.b54031e0.css">
+  <script src="scripts/vendor/modernizr.fbe20327.js"></script>
+
+</head>
+<body>
+    <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> <div class=container> <div class=header> <ul class="nav nav-pills pull-right"> <li class=active><a href=#>Home</a></li> <li><a href=#>About</a></li> <li><a href=#>Contact</a></li> </ul> <h3 class=text-muted>wherehaveyoubeen</h3> </div> <div class=jumbotron> <h1>'Allo, 'Allo!</h1> <p class=lead>Always a pleasure scaffolding your apps.</p> <p><a class="btn btn-lg btn-success" href=#>Splendid! <span class="glyphicon glyphicon-ok"></span></a></p> </div> <div class="row marketing"> <div class=col-lg-6> <h4><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></h4> <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p> <h4><a href="http://libsass.org/">Sass</a></h4> <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p> <h4><a href="http://getbootstrap.com/">Bootstrap</a></h4> <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p> <h4><a href="http://modernizr.com/">Modernizr</a></h4> <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p> </div> </div> <div class=footer> <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p> </div> </div> <script src=scripts/vendor.b8cf041a.js></script> <script src=scripts/plugins.e076c2e5.js></script> <script src=scripts/main.dbf075c8.js></script> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> <script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      <![endif]-->
+
+      <div class="container-fliud">
+        <div class="row">
+          <div id="sidebar" class="col-sm-3 sidebar" style="height:100%; position:fixed; min-height:100%;";>
+            <div id="sidebartext">
+              <h1>Where<br>Have<br>You<br>Been?</h1>
+              <p class="subtitle">Seattle, WA</p>
+              <h4 id="yourvenues">Your Venues</h4>
+              <ul id="venuelist">
+                <li class="neumos noshow">Neumos</li>
+                <li class= "chopsuey noshow">ChopSuey</li>
+                <li class= "highline noshow">HighLine</li>
+                <li data-toggle="modal" data-target=".barboza-modal-lg" class= "barboza noshow">Barboza</li>
+                <li data-toggle="modal" data-target=".blacklodge-modal-lg" class= "theblacklodge noshow">TheBlackLodge</li>
+                <li class= "theneptune noshow">TheNeptune</li>
+                <li class= "caferacer noshow">CafeRacer</li>
+                <li class= "highdive noshow">HighDive</li>
+                <li class= "fremontabbey noshow">FremontAbbey</li>
+                <li class= "skylarkcafe noshow">SkylarkCafe</li>
+                <li class= "nectar noshow">Nectar</li>
+                <li class= "substation noshow">Substation</li>
+                <li class= "thetractortavern noshow">TheTractorTavern</li>
+                <li class= "thesunset noshow">TheSunset</li>
+                <li class= "egansjamhouse noshow">Egan'sJamHouse</li>
+                <li class= "jewelboxtheater noshow">JewelboxTheater</li>
+                <li class= "ballardhomestead noshow">BallardHomestead</li>
+                <li class= "thecrocodile noshow">TheCrocodile</li>
+                <li class= "elcorazon noshow">ElCorazon</li>
+                <li class= "theveraproject noshow">TheVeraProject</li>
+                <li class= "thetripledoor noshow">TheTripleDoor</li>
+                <li class= "showboxmarket noshow">ShowboxMarket</li>
+                <li class= "showboxsodo noshow">ShowboxSODO</li>
+                <li class= "paramounttheatre noshow">ParamountTheatre</li>
+                <li class= "themoore noshow">TheMoore</li>
+                <li class= "seamonsterlounge noshow">SeamonsterLounge</li>
+                <li class= "royalroom noshow">RoyalRoom</li>
+                <li class= "columbiacitytheater noshow">ColumbiaCityTheater</li>
+                <li class= "dimitriousjazzalley noshow">Dimitriou'sJazzAlley</li>
+                <li class= "studioseven noshow">StudioSeven</li>
+              </ul>
+              <a class="submitbutton" href="submit.html">
+                <i id="submit" class="fa fa-arrow-circle-right" aria-hidden="true">
+                  <div id="submitanimation">
+                  </div>
+                </i>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-9 col-sm-offset-3 main" style="height:1000px; position:relative;">
+            <div id="page" class="row">
+              <div data-target-toggle="neumos" name="Neumos" id="neumos" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Neumos</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true">
+                  </i>
+                </p>
+              </div>
+              <div data-target-toggle="chopsuey" name="ChopSuey" id="chopsuey" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Chop Suey</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="highline" name="HighLine" id="highline" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">High Line</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="barboza" name="Barboza" id="barboza" class="minibox col-sm-4">
+                <textarea cols="0" rows="0" id="myText" style="display:none">Some hidden text display none</textarea>
+
+                <p class="miniboxtext"><span class="box">Barboza</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="theblacklodge" name="TheBlackLodge" id="theblacklodge" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Black Lodge</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="theneptune" name="TheNeptune" id="theneptune" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Neptune</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="caferacer" name="CafeRacer" id="caferacer" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Cafe Racer</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="highdive" name="TheHighDive" id="highdive" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">High Dive</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="fremontabbey" name="FremontAbbey" id="fremontabbey" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Fremont Abbey</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="skylarkcafe" name="SkylarkCafe" id="skylarkcafe" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Skylark Cafe</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="nectar" name="Nectar" id="nectar" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Nectar</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="substation" name="Substation" id="substation" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Substation</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="thetractortavern" name="TheTractor" id="thetractor" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Tractor Tavern</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="thesunset" name="TheSunset" id="thesunset" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Sunset</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="egansjamhouse" name="Egan'sJamHouse" id="egansjamhouse" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Egan's Jam House</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="jewelboxtheater" name="jewelboxtheater" id="jewelboxtheater" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Jewelbox Theater</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="ballardhomestead" name="BallardHomestead" id="ballardhomestead" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Ballard Homestead</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="thecrocodile" name="TheCrocodile" id="thecrocodile" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Crocodile</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="elcorazon" name="ElCorazon" id="elcorazon" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">El Corazon</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="theveraproject" name="TheVeraProject" id="theveraproject" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Vera Project</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="thetripledoor" name="TheTripleDoor" id="thetripledoor" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Triple Door</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="showboxmarket" name="ShowboxMarket" id="showboxmarket" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Showbox Market</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="showboxsodo" name="ShowboxSODO" id="showboxsodo" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Showbox SODO</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="paramounttheatre" name= "ParamountTheatre" id="paramounttheatre" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Paramount Theatre</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="themoore" name="TheMoore"id="themoore" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">The Moore</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="seamonsterlounge" name="SeamonsterLounge" id="seamonsterlounge" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Seamonster Lounge</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>
+              <div data-target-toggle="royalroom" name="RoyalRoom" id="royalroom" class="minibox col-sm-4">
+                <p class="miniboxtext"><span class="box">Royal Room</span>
+                  <br>
+                  <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+                </p>
+              </div>            
+              <div data-target-toggle="columbiacitytheater" name="ColumbiaCityTheater" id="columbiacitytheater" class="minibox col-sm-4">
+              <p class="miniboxtext"><span class="box">Columbia City Theater</span>
+                <br>
+                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+              </p>
+            </div>
+            <div data-target-toggle="dimitriousjazzalley" name="Dimitriou'sJazzAlley" id="dimitrious" class="minibox col-sm-4">
+              <p class="miniboxtext"><span class="box">Dimitriou's Jazz Alley</span>
+                <br>
+                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+              </p>
+            </div>
+            <div data-target-toggle= "studioseven" name="StudioSeven" id="studioseven" class="minibox col-sm-4">
+              <p class="miniboxtext"><span class="box">Studio Seven</span>
+                <br>
+                <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- MODALS !-->
+
+<!--    BARBOZA -->
+<div class="modals">
+  <div class="modal fade barboza-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <img class="img-responsive" src="/images/barbozamodal.6304fddb.jpg">
+        <h1 class="modalheader">Barboza</h1>
+        <p>Founded in 2012, Barboza is the sister showroom to Seattle’s legendary Neumos. Located in what was formerly an unfurnished basement and private event space, Barboza is a 200 capacity music venue featuring the hottest up-and-coming local and national acts. From local powerhouse acts to emerging buzz bands, Barboza is a hotbed of new talent. During the weekends we also host some of Seattle’s favorite dance nights, featuring a host of incredibly talented house and guest DJs.</p>
+        <div style="font-family: CooperHewitt; font-weight:bold;" class="modalvenueinfo">
+        <a  style="display: inline-block; margin-right:10px; text-decoration: none; color:black; background-color:#fffd82;" href="https://thebarboza.com/events/">Upcoming Shows</a>
+        <p style="display: inline-block; margin-right:10px;">206.709.925</p>
+        <p style="display: inline-block; margin-right:10px;">925 E. Pike St. Seattle, WA 98122</p>
+        <p style="display: inline-block; margin-right:10px;">info@neumos.com</p>
+      </div>
+      </div>
+    </div>
+    <!-- THE BLACK LODGE -->
+  </div>
+  <div class="modal fade blacklodge-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <h1 class="modalheader">The Black Lodge</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ 
+
+    <script src="scripts/vendor.b8cf041a.js"></script>
+
+    
+    <script src="scripts/plugins.e076c2e5.js"></script>
+    
+
+    <script src="scripts/main.9c08b81f.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');</script>  
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
+  </html>
