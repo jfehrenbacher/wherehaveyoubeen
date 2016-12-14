@@ -28,3 +28,23 @@ $('.minibox').click(function() {
 		targetElement.removeClass('show').addClass('noshow');
 	} 
 });
+
+
+
+$('#clickMe').click(function(event) {
+    var mytext = $('#myText').val();
+
+
+    $('<div id="dialog">'+mytext+'</div>').appendTo('#page');        
+    event.preventDefault();
+
+        $("#dialog").dialog({                   
+            width: 600,
+            modal: true,
+            close: function(event, ui) {
+                $("#dialog").remove();
+                }
+            });
+    }); //close click
+
+

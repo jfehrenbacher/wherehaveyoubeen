@@ -184,7 +184,18 @@ h1 {
   font-family: CooperHewitt;
   font-weight: bolder;
 }
-
+p {
+  font-family: CooperHewitt;
+}
+.modalheader {
+  font-size:36px;
+}
+.modal-content {
+  padding:20px;
+}
+.modal {
+  overflow-y: scroll;
+}
 .subtitle {
   font-family: CooperHewitt;
   position:relative;
@@ -254,6 +265,14 @@ h4 {
  .show {
  }
 
+#dialog {
+  height:600px;
+  color:red;
+  background-color:black;
+  position:fixed;
+  top:200px;
+  text-align:center;
+}
 #venuelist li:hover {
   width: 400px;
   margin-right:100px;

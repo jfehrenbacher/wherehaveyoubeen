@@ -40,19 +40,19 @@
                 <li class="neumos noshow">Neumos</li>
                 <li class= "chopsuey noshow">ChopSuey</li>
                 <li class= "highline noshow">HighLine</li>
-                <li class= "barboza noshow">Barboza</li>
-                <li class= "theblacklodge noshow">TheBlackLodge</li>
+                <li data-toggle="modal" data-target=".barboza-modal-lg" class= "barboza noshow">Barboza</li>
+                <li data-toggle="modal" data-target=".blacklodge-modal-lg" class= "theblacklodge noshow">TheBlackLodge</li>
                 <li class= "theneptune noshow">TheNeptune</li>
                 <li class= "caferacer noshow">CafeRacer</li>
                 <li class= "highdive noshow">HighDive</li>
                 <li class= "fremontabbey noshow">FremontAbbey</li>
-                <li class= "thehighdive noshow">TheHighDive</li>
+                <li class= "skylarkcafe noshow">SkylarkCafe</li>
                 <li class= "nectar noshow">Nectar</li>
                 <li class= "substation noshow">Substation</li>
                 <li class= "thetractortavern noshow">TheTractorTavern</li>
                 <li class= "thesunset noshow">TheSunset</li>
                 <li class= "egansjamhouse noshow">Egan'sJamHouse</li>
-                <li class= "thejosephine noshow">TheJosephine</li>
+                <li class= "jewelboxtheater noshow">JewelboxTheater</li>
                 <li class= "ballardhomestead noshow">BallardHomestead</li>
                 <li class= "thecrocodile noshow">TheCrocodile</li>
                 <li class= "elcorazon noshow">ElCorazon</li>
@@ -78,9 +78,6 @@
           </div>
           <div class="col-sm-9 col-sm-offset-3 main" style="height:1000px; position:relative;">
             <div id="page" class="row">
-              <div id="dialog" style="display:none;">
-                <p>Hey it worked</p>
-              </div>
               <div data-target-toggle="neumos" name="Neumos" id="neumos" class="minibox col-sm-4">
                 <p class="miniboxtext"><span class="box">Neumos</span>
                   <br>
@@ -101,6 +98,8 @@
                 </p>
               </div>
               <div data-target-toggle="barboza" name="Barboza" id="barboza" class="minibox col-sm-4">
+                <textarea cols="0" rows="0" id="myText" style="display:none">Some hidden text display none</textarea>
+
                 <p class="miniboxtext"><span class="box">Barboza</span>
                   <br>
                   <i id="plus" class="fa fa-plus-circle" aria-hidden="true"></i>
@@ -266,6 +265,40 @@
         </div>
       </div>
     </div>
+
+<!-- MODALS !-->
+
+<!--    BARBOZA -->
+<div class="modals">
+  <div class="modal fade barboza-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <img class="img-responsive" src="/images/barbozamodal.jpg">
+        <h1 class="modalheader">Barboza</h1>
+        <p>Founded in 2012, Barboza is the sister showroom to Seattle’s legendary Neumos. Located in what was formerly an unfurnished basement and private event space, Barboza is a 200 capacity music venue featuring the hottest up-and-coming local and national acts. From local powerhouse acts to emerging buzz bands, Barboza is a hotbed of new talent. During the weekends we also host some of Seattle’s favorite dance nights, featuring a host of incredibly talented house and guest DJs.</p>
+        <div style="font-family: CooperHewitt; font-weight:bold;" class="modalvenueinfo">
+        <a  style="display: inline-block; margin-right:10px; text-decoration: none; color:black; background-color:#fffd82;" href="https://thebarboza.com/events/">Upcoming Shows</a>
+        <p style="display: inline-block; margin-right:10px;">206.709.925</p>
+        <p style="display: inline-block; margin-right:10px;">925 E. Pike St. Seattle, WA 98122</p>
+        <p style="display: inline-block; margin-right:10px;">info@neumos.com</p>
+      </div>
+      </div>
+    </div>
+    <!-- THE BLACK LODGE -->
+  </div>
+  <div class="modal fade blacklodge-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <h1 class="modalheader">The Black Lodge</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ 
+
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
