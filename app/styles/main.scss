@@ -93,8 +93,8 @@ html, body, .container-fluid {
 #egansjamhouse {
   background-image: url("../images/eganjamhouse.jpg");
 }
-#thesunset {
-  background-image: url("../images/thesunset.jpg");
+#highway99 {
+  background-image: url("../images/highway99.jpg");
 }
 #jewelboxtheater {
   background-image: url("../images/jewelboxtheater.jpg");
@@ -125,6 +125,27 @@ html, body, .container-fluid {
 }
 #thesunset {
   background-image: url("../images/thesunset.jpg");
+}
+#caphilllist {
+  background-image: url("../images/highline.jpg");
+}
+#frelist {
+  background-image: url("../images/fremontabbey.jpg");
+}
+#ballist {
+  background-image: url("../images/tractortavern.jpg")
+}
+#udlist {
+  background-image: url("../images/neptune.jpg");
+}
+#dtlist {
+  background-image: url("../images/highway99.jpg");
+}
+#cclist {
+  background-image: url("../images/substation.jpg");
+}
+#sodolist{
+  background-image: url("../images/thesunset.jpg")
 }
 // END BACKGROUND IMAGES
 .selected {
@@ -170,13 +191,12 @@ html, body, .container-fluid {
   color:black;
 }
 
-#sidebar {
+.sidebar {
   overflow-y: scroll;
 }
 
-#sidebartext {
+.sidebartext {
   position:relative;
-  left:50px;
   top:30px;
 }
 
@@ -189,13 +209,44 @@ p {
 }
 .modalheader {
   font-size:36px;
-}
-.modal-content {
-  padding:20px;
+
 }
 .modal {
   overflow-y: scroll;
+  position:absolute;
+  top:240px;
 }
+.modalvenueinfo {
+  display: inline-block;
+  margin-right:10px;
+  text-decoration:none;
+  color:black;
+  font-size:12px;
+  font-family: CooperHewitt; 
+  font-weight:bold;
+}
+.modalimage {
+padding-top:15px;
+padding-bottom: 15px;
+}
+
+.upcoming:hover {
+  text-decoration:none;
+  font-weight:bold;
+  color:black;
+}
+.modaltext {
+  padding-top:15px;
+}
+.modalsubmit{
+  font-size:28px;
+  z-index:1;
+  color:black;
+  display:inline-block;
+}
+.modalsubmit:hover {
+}
+
 .subtitle {
   font-family: CooperHewitt;
   position:relative;
@@ -239,6 +290,56 @@ h4 {
     transition:.3s;
     transition-timing-function: ease-in;
 }
+
+.center {
+  text-align:center;
+}
+/// SUBMIT PAGE
+
+.submitpage {
+  height:100vh;
+  overflow-y:scroll;
+}
+
+.submitside {
+  background-color: #fffd82;
+  height:100vh;
+  overflow-y:scroll;
+  padding:0px;
+}
+.submitsidetext {
+  position:relative;
+  top:15px;
+}
+
+.submitlistitem {
+  height:16.6666667vh;
+  margin:0px;
+}
+.submittitle {
+  position:relative;
+  top:65px;
+}
+.submithead {
+  font-family:Arciform; 
+  text-transform:uppercase; 
+  letter-spacing:10px; 
+  font-size:42px;
+}
+
+.neighborhoodtext {
+  color:#fffd82;
+  font-family:Arciform;
+  text-transform: uppercase;
+  text-align:center;
+  position:relative;
+  top: 8vh;
+  letter-spacing: 5px;
+  font-size:12px;
+}
+
+/// SUBMIT PAGE END
+
 #venuelist {
   list-style-type:none;
   text-transform:uppercase;
