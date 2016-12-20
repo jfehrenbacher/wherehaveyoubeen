@@ -34,6 +34,35 @@ html, body, .container-fluid {
   /* ...and now for the proper property */
   transition:.5s;
 }
+
+#plus, .box, #question {
+    -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  /* ...and now for the proper property */
+  transition:.2s;
+}
+
+#question {
+  display:inline;
+  color:rgba(0,0,0,0);
+  font-size:16px;
+  padding-right:px;
+  position:relative;
+  right:24px;
+  top:1px;
+}
+#venuelist li:hover #question {
+  transform: translate3d(20px,0,0);
+  color: rgba(0,0,0,1);
+}
+
+
+.listitem {
+  position:relative;
+  right:10px;
+}
 .minibox {
   height:300px;
   margin:0px;
@@ -164,6 +193,9 @@ html, body, .container-fluid {
   font-size:28px;
   padding-top:24px;
   color:#fffd82;
+  position:relative;
+  top:0px;
+  transition: transform .2s ease-in-out;
 }
 
 .subtract {
@@ -189,6 +221,7 @@ html, body, .container-fluid {
 
 .minibox:hover #plus {
   color:black;
+  transform: translate3d(-20px,0px,0px);
 }
 
 .sidebar {
@@ -353,7 +386,7 @@ h4 {
 
 #venuelist li {
   background-color: #fffd82;
-  width:10px;
+  width:0px;
   transition:.3s;
     transition-timing-function: ease-in;
     padding-left:5px;
