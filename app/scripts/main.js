@@ -18,6 +18,11 @@ console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
 // 	$('#dialog').dialog('open');
 // });
 
+$(document).ready(function() {
+	$('body').css('display', 'none');
+	$('body').fadeIn(500);
+})
+
 $('.minibox').click(function() {
 	$(this).toggleClass('selected');
 	var targetClass = $(this).data("target-toggle");
@@ -96,6 +101,18 @@ $(document).ready(function() {
 		$('#sodolist').removeClass('show').addClass('noshow');
 	} 
 })
+
+function initMap() {
+        var neumos = {lat: 47.613843, lng: -122.319715999};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: neumos
+        });
+        var marker = new google.maps.Marker({
+          position: neumos,
+          map: map
+        });
+      }
 
 
 // $('.minibox').click(function classCount() {

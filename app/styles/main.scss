@@ -5,7 +5,10 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // endbower
 
 
-
+html, body {
+  margin:0;
+  height:100%;
+}
 
 #page {
   overflow-y:scroll;
@@ -194,7 +197,7 @@ html, body, .container-fluid {
   padding-top:24px;
   color:#fffd82;
   position:relative;
-  top:0px;
+  top:20px;
   transition: transform .2s ease-in-out;
 }
 
@@ -221,7 +224,7 @@ html, body, .container-fluid {
 
 .minibox:hover #plus {
   color:black;
-  transform: translate3d(-20px,0px,0px);
+  transform: translate3d(0px,-20px,0px);
 }
 
 .sidebar {
@@ -328,38 +331,76 @@ h4 {
   text-align:center;
 }
 /// SUBMIT PAGE
+.col-sm-12 {
+  padding: 0px;
+}
+
+.submithero {
+  background-image: url("../images/caphillhero.jpg");
+  min-height:100vh;
+  /* parallax */
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
 
 .submitpage {
+  background-color:white;
   height:100vh;
-  overflow-y:scroll;
-}
-
-.submitside {
-  background-color: #fffd82;
-  height:100vh;
-  overflow-y:scroll;
-  padding:0px;
-}
-.submitsidetext {
-  position:relative;
-  top:15px;
-}
-
-.submitlistitem {
-  height:16.6666667vh;
-  margin:0px;
-}
-.submittitle {
-  position:relative;
-  top:65px;
 }
 .submithead {
-  font-family:Arciform; 
-  text-transform:uppercase; 
-  letter-spacing:10px; 
-  font-size:42px;
+  font-family:CooperHewitt; 
+  font-size:120px;
+  color:white;
+  text-align:left;
+  position:relative;
+  left:20px;
+  top:900px;
+  }
+.submittop {
+  text-align:left;
+  padding-bottom:10px;
 }
+.submitsub 
+.submitbody {
 
+}
+.submitimage {
+  width:850px;
+  height:200px;
+  padding-left:80px;
+  padding-top:20px;
+}
+.submittext {
+  padding-left:80px;
+  padding-right:80px;
+  padding-top:80px;
+
+}
+.submitplus {
+  font-size:14px;
+  position:relative;
+  bottom:1px;
+  padding-right:5px;
+}
+.submitextra {
+  position:relative;
+  top:20px;
+}
+.colorbox {
+  background-color:#fffd82;
+  height:100px;
+  position:relative;
+  top:20px;
+}
+#map {
+  width:100%;
+  text-align:center;
+  height:100vh;
+  background-color:gray;
+  position:relative;
+}
 .neighborhoodtext {
   color:#fffd82;
   font-family:Arciform;
